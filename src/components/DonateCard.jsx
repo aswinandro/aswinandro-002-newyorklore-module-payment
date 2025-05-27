@@ -9,7 +9,7 @@ const DonateCard = () => {
   const handleDonate = async () => {
     setLoading(true);
     const stripe = await stripePromise;
-    const response = await fetch('/.netlify/functions/create-checkout-session', {
+    const response = await fetch('/api/create-checkout-session', {
       method: 'POST',
     });
     const { id } = await response.json();

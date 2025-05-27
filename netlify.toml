@@ -1,0 +1,5 @@
+[dev]
+  framework = "vite"
+  targetPort = 5173
+  functions = "netlify/functions"
+  command = "vite"         # 👈 Run Vite dev server, not build

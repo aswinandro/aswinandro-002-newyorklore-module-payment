@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap');
+@import "tailwindcss";
+/* 
+@tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}

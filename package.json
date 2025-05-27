@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "netlify dev",
     "vite": "vite",
-    "build": "vite build",
+   "build": "vite build && npm run build:functions",
+  "build:functions": "esbuild netlify/functions/create-checkout-session.js --bundle --outfile=dist/.netlify/functions/create-checkout-session.js --platform=node",
     "lint": "eslint .",
     "preview": "vite preview"
   },

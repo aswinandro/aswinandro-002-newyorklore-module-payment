@@ -8920,6 +8920,7 @@ var require_stripe_cjs_node = __commonJS({
 // netlify/functions/create-checkout-session.js
 var stripe = require_stripe_cjs_node()(process.env.STRIPE_SECRET_KEY);
 exports.handler = async (event) => {
+  const baseUrl = process.env.BASE_URL || "http://localhost:5173";
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }

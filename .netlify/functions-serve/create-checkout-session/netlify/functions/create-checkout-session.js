@@ -8920,7 +8920,7 @@ var require_stripe_cjs_node = __commonJS({
 // netlify/functions/create-checkout-session.js
 var stripe = require_stripe_cjs_node()(process.env.STRIPE_SECRET_KEY);
 exports.handler = async (event) => {
-  const baseUrl = process.env.BASE_URL || "http://localhost:5173";
+  const baseUrl = process.env.BASE_URL || "http://localhost:8888";
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
@@ -8939,8 +8939,8 @@ exports.handler = async (event) => {
         quantity: 1
       }],
       mode: "payment",
-      success_url: `${process.env.URL}/success`,
-      cancel_url: `${process.env.URL}/cancel`
+      success_url: `${baseUrl}/success`,
+      cancel_url: `${baseUrl}/cancel`
     });
     return {
       statusCode: 200,

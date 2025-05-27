@@ -19,7 +19,7 @@ const DonateCard = () => {
   return (
     <div
       tabIndex={0} // Make div focusable for keyboard users
-      className="rounded-2xl bg-white/20 backdrop-blur-md shadow-lg border border-white/30 p-6 w-full max-w-md text-center transition-shadow transition-transform duration-300 ease-in-out hover:shadow-xl hover:scale-105 focus:outline-none focus:scale-105 cursor-pointer"
+      className="rounded-2xl bg-white/10 backdrop-blur-md shadow-lg border border-white/30 p-6 w-full max-w-md text-center transition-shadow transition-transform duration-300 ease-in-out hover:shadow-xl hover:scale-105 focus:outline-none focus:scale-105 cursor-pointer"
     >
       <h2 className="text-2xl font-raleway text-gray-900 mb-4">Support the Lore</h2>
       <p className="text-gray-800 font-roboto mb-6">Help keep New York’s legends alive. Donate $1.</p>

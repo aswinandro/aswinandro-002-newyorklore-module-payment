@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 
 
 const Success = () => (
+  <>
+    <div className="svg-overlay absolute inset-0 z-0"></div>
+
+  <div className="relative z-10">
   <div className="min-h-screen flex items-center justify-center text-center bg-[url('/canal-lines.svg')] bg-cover bg-center bg-no-repeat">
     <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-md w-full transition-transform duration-300 ease-in-out hover:scale-105 animate-fadeIn">
       <div className="flex justify-center mb-4 animate-pop">
@@ -31,6 +35,8 @@ const Success = () => (
       </Link>
     </div>
   </div>
+  </div>
+  </>
 );
 
 export default Success;

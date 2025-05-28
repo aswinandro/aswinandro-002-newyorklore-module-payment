@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
 const Cancel = () => (
+  <>
+    <div className="svg-overlay absolute inset-0 z-0"></div>
+
+  <div className="relative z-10">
   <div className="min-h-screen flex items-center justify-center text-center bg-[url('/canal-lines.svg')] bg-cover bg-center bg-no-repeat">
     <div className="bg-white/30 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-md w-full transition-transform duration-300 ease-in-out hover:scale-105 animate-fadeIn">
       
@@ -39,6 +43,8 @@ const Cancel = () => (
       </Link>
     </div>
   </div>
+  </div>
+  </>
 );
 
 export default Cancel;

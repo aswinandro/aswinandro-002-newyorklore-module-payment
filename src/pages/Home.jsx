@@ -15,9 +15,11 @@ const Home = () => {
       <div className="absolute top-2/3 w-full h-1 pointer-events-none overflow-hidden z-10">
         <div className="h-1 w-1/3 bg-[var(--donate-accent)] opacity-50 blur-md donate-animate-moveX donate-animate-wavePulse mx-auto rounded-full" />
       </div>
+      <div className="svg-overlay absolute inset-0 z-0"></div>
 
+  <div className="relative z-10">
         <DonateCard />
-      
+      </div>
     </div>
   );
 };
